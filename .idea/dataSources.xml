@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="maria@localhost" uuid="4d4152f5-f7c6-4900-9e33-2915e9d117cb">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://localhost:3306/bb88collectData</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>

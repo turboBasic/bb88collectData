@@ -1,0 +1,9 @@
+{
+  "name": "bb88collectData",
+  "description": "collects electricity and water consumption data",
+  "version": "0.0.1",
+  "require": {
+  },
+  "minimum-stability": "dev"
+
+}
