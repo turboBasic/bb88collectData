@@ -903,22 +903,54 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="226" parent="2" name="table_name"/>
-    <column id="227" parent="226" name="column_1">
+    <table id="226" parent="2" name="electometer">
+      <Comment>Electricity Meter data</Comment>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="227" parent="2" name="electricity"/>
+    <table id="228" parent="2" name="migration"/>
+    <column id="229" parent="226" name="datetime">
       <Position>1</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="230" parent="226" name="kwh">
+      <Position>2</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="231" parent="226" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>datetime</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="232" parent="227" name="date">
+      <Position>1</Position>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="233" parent="227" name="electricityMeter">
+      <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="228" parent="226" name="column_2">
+    <column id="234" parent="228" name="version">
+      <Position>1</Position>
+      <DataType>varchar(180)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="235" parent="228" name="apply_time">
       <Position>2</Position>
-      <DataType>text|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="229" parent="226" name="PRIMARY">
+    <key id="236" parent="228" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>column_1</ColNames>
+      <ColNames>version</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>
